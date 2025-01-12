@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".StoreActivity">
+
+    <ListView
+        android:id="@+id/ListView"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/total_items_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="32dp"
+
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp"></ListView>
+
+    <TextView
+        android:id="@+id/total_items_text"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/total_cost_text"
+
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="48dp"
+        android:text="Monety w koszyku"
+
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_count_text"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/total_cost_text"
+
+        android:layout_marginBottom="32dp"
+        android:layout_marginRight="48dp"
+        android:layout_alignParentRight="true"
+        android:text="X"
+
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/total_cost_text"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/finish_shopping_button"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="48dp"
+        android:text="Łączny koszt zakupów"
+
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_price_text"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/finish_shopping_button"
+
+
+        android:layout_marginBottom="32dp"
+        android:layout_marginRight="48dp"
+        android:layout_alignParentRight="true"
+        android:text="X.XX"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/finish_shopping_button"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/return_button"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="32dp"
+        android:background="@color/store_btn_bg"
+
+        android:minWidth="256dp"
+        android:minHeight="48dp"
+
+        android:onClick="btnFinishShopping"
+
+        android:text="Zapłać i zakończ zakupy"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/return_button"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="32dp"
+        android:background="@color/return_btn_bg"
+
+        android:minWidth="256dp"
+        android:minHeight="48dp"
+
+        android:onClick="btnReturn"
+        android:text="Powrót"
+
+        android:textColor="@color/black" />
+
+</RelativeLayout>

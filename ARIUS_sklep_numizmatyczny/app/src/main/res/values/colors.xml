@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="log_in_btn_bg">#FF00C000</color> <!-- Kolor przycisku do logowania -->
+    <color name="log_out_btn_bg">#FFC00000</color> <!-- Kolor przycisku do wylogowania -->
+
+    <color name="register_btn_bg">#FF7070FF</color> <!-- Kolor przycisku do rejestracji -->
+
+    <color name="collection_btn_bg">#FF0000C0</color> <!-- Kolor przycisku kolekcji -->
+    <color name="collection_btn_dis_bg">#800000C0</color> <!-- Kolor przycisku kolekcji (wyłączony) -->
+
+    <color name="store_btn_bg">#FFC0C000</color> <!-- Kolor przycisku sklepu -->
+    <color name="store_btn_dis_bg">#80C0C000</color> <!-- Kolor przycisku sklepu (wyłączony) -->
+
+    <color name="return_btn_bg">#FFA0A0A0</color> <!-- Kolor przycisku sklepu (wyłączony) -->
+</resources>

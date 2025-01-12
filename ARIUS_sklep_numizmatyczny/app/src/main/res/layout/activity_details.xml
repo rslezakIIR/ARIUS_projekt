@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="32dp"
+    tools:context=".DetailsActivity">
+
+
+    <ImageView
+        android:id="@+id/coin_image"
+
+        android:src="@drawable/missing_texture"
+        android:layout_alignParentTop="true"
+
+        android:maxWidth="128dp"
+        android:minWidth="128dp"
+        android:maxHeight="128dp"
+        android:minHeight="128dp"
+        android:adjustViewBounds="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/name_text"
+
+        android:text="Nazwa"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_below="@id/coin_image"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/year_text"
+
+        android:text="Rok"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="italic"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_below="@id/name_text"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/description_text"
+
+        android:text="Opis"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_below="@id/year_text"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/price_text"
+
+        android:text="Cena"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="64dp"
+
+        android:layout_below="@id/description_text"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/price_value_text"
+
+        android:text="Cena"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="64dp"
+
+        android:layout_below="@id/description_text"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/country_text"
+
+        android:text="Państwo"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="64dp"
+
+        android:layout_below="@id/price_text"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/country_value_text"
+
+        android:text="Państwo"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="64dp"
+
+        android:layout_below="@id/price_text"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/quantity_text"
+
+        android:text="Sztuki"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="64dp"
+
+        android:layout_below="@id/country_text"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/quantity_value_text"
+
+        android:text="Sztuki"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="64dp"
+
+        android:layout_below="@id/country_text"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/score_text"
+
+        android:text="Ocena"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="64dp"
+
+        android:layout_below="@id/quantity_text"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/score_value_text"
+
+        android:text="Ocena"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="64dp"
+
+        android:layout_below="@id/quantity_text"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/score_count_text"
+
+        android:text="Liczba ocen"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="64dp"
+
+        android:layout_below="@id/score_text"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/score_count_value_text"
+
+        android:text="Liczba ocen"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="64dp"
+
+        android:layout_below="@id/score_text"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/add_to_cart_button"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="32dp"
+        android:background="@color/store_btn_bg"
+
+        android:minWidth="256dp"
+        android:minHeight="48dp"
+
+        android:onClick="btnAddToCart"
+        android:text="Dodaj do koszyka"
+
+        android:textColor="@color/white"
+        android:layout_above="@id/return_button"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/return_button"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="32dp"
+        android:background="@color/return_btn_bg"
+
+        android:minWidth="256dp"
+        android:minHeight="48dp"
+
+        android:onClick="btnReturn"
+        android:text="Powrót"
+
+        android:textColor="@color/black" />
+
+</RelativeLayout>
