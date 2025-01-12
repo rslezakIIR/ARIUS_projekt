@@ -1,0 +1,255 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  margin-top: 10px;
+  gap: 15px;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Forms Styles */
+.login, .register {
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form, .register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-input, .register-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.login-button, .register-button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-button:hover, .register-button:hover {
+  background-color: #0056b3;
+}
+
+.login-error, .register-error {
+  background-color: #ffdddd;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 4px;
+  color: #721c24;
+}
+
+/* Home/Collection Styles */
+.home, .collection {
+  padding: 20px;
+}
+
+.home-header, .home-banner, .home-featured {
+  margin-bottom: 20px;
+}
+
+.home-title, .home-banner-title, .home-featured-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.home-subtitle, .home-banner-text {
+  font-size: 18px;
+  color: #555;
+}
+
+.home-banner {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #96c4f5;
+  color: white;
+  text-align: center;
+}
+
+.home-banner-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.home-banner-button:hover {
+  background-color: #f0f0f0;
+}
+
+.home-coins {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.collection {
+  padding: 20px;
+  text-align: center;
+}
+
+.collection-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.collection-item {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collection-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.collection-item-image {
+  margin:auto;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.collection-item-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.collection-item-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.collection-item-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.collection-item-link {
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 12px;
+}
+
+.collection-item-link:hover {
+  text-decoration: underline;
+}
+
+.collection-empty {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+}
+
+/* CoinDetail Styles */
+.coin-detail-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.coin-detail-container h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.coin-image {
+  display: block;
+  margin: 0 auto 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.coin-detail-container p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.coin-detail-container p strong {
+  color: #333;
+}
