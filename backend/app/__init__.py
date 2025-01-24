@@ -13,7 +13,7 @@ jwt = JWTManager()
 mail = Mail()
 
 def create_app(config_name='default'):
-    app = Flask(_name_)
+    app = Flask(__name__)
 
     # Load configuration from config object
     app.config.from_object(config[config_name])

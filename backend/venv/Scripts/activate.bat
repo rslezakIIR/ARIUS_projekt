@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\Maciej\Desktop\ARIUS\Projekt\Arius\backend\venv
+set VIRTUAL_ENV=C:\Users\Chris\OneDrive\Dokumenty\IIR5\ARIUS_projekt-main\backend\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
